@@ -1,9 +1,11 @@
+"use client";
+
+import Link from "next/link";
+
 export default function SignupPage() {
   return (
-    <main className="min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-50 to-blue-100 px-4">
-
+    <main className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
       <div className="w-full max-w-md bg-white rounded-2xl shadow-xl p-8">
-
         <h1 className="text-4xl font-bold text-center">
           <span className="text-blue-700">Rank</span>
           <span className="text-orange-500">Flows</span>
@@ -14,7 +16,6 @@ export default function SignupPage() {
         </p>
 
         <form className="space-y-4 mt-8">
-
           <input
             type="text"
             placeholder="Full Name"
@@ -40,25 +41,23 @@ export default function SignupPage() {
           />
 
           <button
+            type="submit"
             className="w-full bg-orange-500 hover:bg-orange-600 text-white py-4 rounded-xl"
           >
             Create Account
           </button>
-
         </form>
 
         <p className="text-center mt-6">
-          Already have an account?
-          <a
+          Already have an account?{" "}
+          <Link
             href="/login"
-            className="text-blue-600 font-semibold ml-2"
+            className="text-blue-600 font-semibold"
           >
             Login
-          </a>
+          </Link>
         </p>
-
       </div>
-
     </main>
   );
 }

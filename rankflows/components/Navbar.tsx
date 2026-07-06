@@ -1,7 +1,7 @@
 export default function Navbar() {
   return (
-    <header className="sticky top-0 bg-white shadow-md z-50">
-      <div className="max-w-7xl mx-auto flex justify-between items-center px-8 py-5">
+    <header className="w-full bg-white shadow-sm">
+      <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
 
         <h1 className="text-3xl font-bold">
           <span className="text-blue-700">Rank</span>

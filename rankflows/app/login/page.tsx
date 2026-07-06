@@ -1,9 +1,11 @@
+"use client";
+
+import Link from "next/link";
+
 export default function LoginPage() {
   return (
-    <main className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-100 to-white px-4">
-
+    <main className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
       <div className="w-full max-w-md bg-white rounded-2xl shadow-xl p-8">
-
         <h1 className="text-4xl font-bold text-center">
           <span className="text-blue-700">Rank</span>
           <span className="text-orange-500">Flows</span>
@@ -14,7 +16,6 @@ export default function LoginPage() {
         </p>
 
         <form className="mt-8 space-y-5">
-
           <input
             type="email"
             placeholder="Email Address"
@@ -33,21 +34,18 @@ export default function LoginPage() {
           >
             Login
           </button>
-
         </form>
 
         <p className="text-center mt-6">
-          Don't have an account?
-          <a
+          Don't have an account?{" "}
+          <Link
             href="/signup"
-            className="text-blue-600 font-semibold ml-2"
+            className="text-blue-600 font-semibold"
           >
             Sign Up
-          </a>
+          </Link>
         </p>
-
       </div>
-
     </main>
   );
 }
